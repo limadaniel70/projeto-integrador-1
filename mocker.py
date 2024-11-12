@@ -46,7 +46,7 @@ PERGUNTAS: dict[str, list[str]] = {
     ],
 }
 
-N_DE_RESPOSTAS = 1_000_000
+N_DE_RESPOSTAS = 100
 
 with open("ETEPLAP-quest.csv", "wt") as quest:
     wt = csv.writer(quest)
