@@ -1,3 +1,4 @@
+#####################################################################
 df <- read.csv('ETEPLAP-quest.csv')
 #====================================================================
 # PERGUNTA 1
@@ -28,4 +29,18 @@ sem_inconsistencia <- total_usuarios - acharam_inconsistencia
 # PERGUNTA 5
 #====================================================================
 # VANTAGEM DE UM SISTEMA AUTOMATIZADO
-
+op5 <- as.vector(unique(df[[5]]))
+# [1] "Economia de tempo." [2] "Facilidade de acesso a livros." 
+# [3] "Maior precisão nas informações." [4] "Não tenho certeza." 
+op5 <- sort(op5)
+#====================================================================
+# PERGUNTA 6
+#====================================================================
+# PREF DE ACESSO
+#====================================================================
+# PERGUNTA 7
+#====================================================================
+# MELHORA NA EXP
+melhora <- sum(df[7] != "Não faria diferença." & df[7] != "Pioraria minha experiência.")
+piora <- total_usuarios - melhora
+#####################################################################
