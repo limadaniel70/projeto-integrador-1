@@ -1,46 +1,33 @@
 #####################################################################
 df <- read.csv('ETEPLAP-quest.csv')
 #====================================================================
-# PERGUNTA 1
+# CARREGAR FATORES
 #====================================================================
-# USUARIOS QUE UTILIZAM A BIBLIOTECA
-total_pessoas <- nrow(df)
+# Removendo pessoas que nunca utilizaram a biblioteca
 df <- subset(df, df[1] != "Nunca.")
-total_usuarios <- nrow(df)
+for (i in 1:7) {
+  df[[i]] <- as.factor(df[[i]])
+}
 #====================================================================
-# PERGUNTA 2
+# PERGUNTAS
 #====================================================================
-# BIBLIOTECAS QUE USAM UM SISTEMA MANUAL
-bibliotecas_manuais <- sum(df[2] != "Através de um sistema digital dabiblioteca.")
-bibliotecas_automaticas <- total_usuarios - bibliotecas_manuais
+# 1 -> "Com que frequência você utiliza a biblioteca para 
+# realizar consultas de disponibilidade de livros?"
 #====================================================================
-# PERGUNTA 3
+# 2 -> "Como você realiza a consulta de 
+# disponibilidade de livros na biblioteca?"
 #====================================================================
-# USUARIOS INSATISFEITOS
-insatisfeitos <- sum(df[3] == "Insatisfeito." | df[3] == "Muito insatisfeito.")
-outros <- nrow(df) - insatisfeitos
+# 3 -> "Como você se sente em relação à precisão e rapidez
+# do sistema atual de consulta manual?"
 #====================================================================
-# PERGUNTA 4
+# 4 -> "Você já se deparou com inconsistências na disponibilidade
+# de livros entre o sistema da biblioteca e o acervo real?"
 #====================================================================
-# PESSOAS QUE ENCONTRARAM UM INCONSISTENCIA NO ACERVO
-acharam_inconsistencia <- sum(df[4] != "Não, nunca.")
-sem_inconsistencia <- total_usuarios - acharam_inconsistencia
+# 5 -> "Em sua opinião, qual seria o maior benefício de um sistema
+# que permitisse consultar a disponibilidade de livros em tempo real?"
 #====================================================================
-# PERGUNTA 5
+# 6 -> "Qual a sua preferência de acesso ao sistema de consulta?"
 #====================================================================
-# VANTAGEM DE UM SISTEMA AUTOMATIZADO
-op5 <- as.vector(unique(df[[5]]))
-# [1] "Economia de tempo." [2] "Facilidade de acesso a livros." 
-# [3] "Maior precisão nas informações." [4] "Não tenho certeza." 
-op5 <- sort(op5)
+# 7 -> "Em que medida um sistema automatizado melhoraria
+# sua experiência na biblioteca?"
 #====================================================================
-# PERGUNTA 6
-#====================================================================
-# PREF DE ACESSO
-#====================================================================
-# PERGUNTA 7
-#====================================================================
-# MELHORA NA EXP
-melhora <- sum(df[7] != "Não faria diferença." & df[7] != "Pioraria minha experiência.")
-piora <- total_usuarios - melhora
-#####################################################################
