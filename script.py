@@ -12,6 +12,7 @@ p = lambda s: print(s)
 def pegar_livro(nome):
     if livros.get(nome) == None:
         p("livro inexistente!")
+        return
     livros[nome] = "indisponivel"
     p("Livro retirado com sucesso!")
 
@@ -19,6 +20,7 @@ def pegar_livro(nome):
 def devolver_livro(nome):
     if livros.get(nome) == None:
         p("livro inexistente!")
+        return
     livros[nome] = "disponivel"
     p("Livro devolvido com sucesso!")
 
@@ -32,7 +34,7 @@ def listar_livros():
         p(f"{livro} --> {disponibilidade}")
 
 
-p("--------------------------------")
+p("-" * 40)
 
 p(
     """Selecione uma opção:
@@ -43,7 +45,7 @@ p(
 )
 
 while True:
-    p("--------------------------------")
+    p("-" * 40)
 
     ans = input("Insira sua resposta: ")
 
