@@ -1,0 +1,45 @@
+1.  Com que frequência você utiliza a biblioteca para realizar consultas de disponibilidade de livros? 
+ 	Anualmente   :2                                                                                   
+ 	Diariamente  :3                                                                                   
+ 	Mensalmente  :6                                                                                   
+ 	Semanalmente :9
+
+ 2. Como você realiza a consulta de disponibilidade de livros na biblioteca? 
+	Ainda não fiz o uso da mesma                      : 2
+ 	Através de um sistema digital da biblioteca       : 1
+ 	Manualmente, por consulta direta ao acervo físico : 6
+ 	Não uso a biblioteca                              : 1
+ 	Perguntando diretamente a funcionários            :10                                 
+
+3. Como você se sente em relação à precisão e rapidez do sistema atual de consulta manual?
+ 	Insatisfeito       :5
+ 	Muito insatisfeito :8
+ 	Neutro             :7                                                                             
+
+4. Quais dificuldades você encontra no sistema manual de consulta de livros?
+	Informação desatualizada sobre disponibilidade                                                                                          :4
+	Dificuldade para localizar livros no acervo , Necessidade de assistência constante do bibliotecário                                     :3
+	Necessidade de assistência constante do bibliotecário                                                                                   :3
+	Ainda não frequentei                                                                                                                    :2
+	Dificuldade para localizar livros no acervo , Falta de organização na busca de títulos                                                  :2
+ 	Dificuldade para localizar livros no acervo , Informação desatualizada sobre disponibilidade , Falta de organização na busca de títulos :2
+ 	(Other)                                                                                                                                 :4
+
+5. Você já se deparou com inconsistências na disponibilidade de livros entre o sistema da biblioteca e o acervo real?
+ 	Não, nunca          :9
+ 	Sim, frequentemente :6
+ 	Sim, ocasionalmente :5
+
+6. Em sua opinião, qual seria o maior benefício de um sistema que permitisse consultar a disponibilidade de livros em tempo real?
+ 	Economia de tempo              : 5
+ 	Facilidade de acesso a livros  :10
+ 	Maior precisão nas informações : 4
+ 	Não tenho certeza              : 1
+
+7. Qual a sua preferência de acesso ao sistema de consulta? 
+	Aplicativo móvel                                           :12
+ 	Computador específico para consultas na própria biblioteca : 5
+	Site acessível por navegador                               : 3
+
+8. Em que medida um sistema automatizado melhoraria sua experiência na biblioteca 
+	Melhoraria muito :20
