@@ -8,12 +8,12 @@ PERGUNTAS: dict[str, list[str]] = {
         "Semanalmente.",
         "Mensalmente.",
         "Anualmente.",
-        "Nunca.",
+#        "Nunca.",
     ],
     "Como você realiza a consulta de disponibilidade de livros na biblioteca?": [
-        "Manualmente, por consulta direta aoacervo físico.",
-        "Através de um sistema digital dabiblioteca.",
-        "Perguntando diretamente afuncionários.",
+        "Manualmente, por consulta direta ao acervo físico.",
+        "Através de um sistema digital da biblioteca.",
+        "Perguntando diretamente a funcionários.",
     ],
     "Como você se sente em relação à precisão e rapidez do sistema atual de consulta manual?": [
         "Muito satisfeito.",
@@ -46,7 +46,7 @@ PERGUNTAS: dict[str, list[str]] = {
     ],
 }
 
-N_DE_RESPOSTAS = 100
+N_DE_RESPOSTAS = 28
 
 with open("ETEPLAP-quest.csv", "wt") as quest:
     wt = csv.writer(quest)
