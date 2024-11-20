@@ -6,21 +6,21 @@ livros = {
     "o banquete": "disponivel",
 }
 
-p = lambda s: print(s)
-
 
 def pegar_livro(nome):
-    if livros.get(nome) == None:
-        p("livro inexistente!")
+    if livros.get(nome) is None:
+        print("livro inexistente!")
+        return
     livros[nome] = "indisponivel"
-    p("Livro retirado com sucesso!")
+    print("Livro retirado com sucesso!")
 
 
 def devolver_livro(nome):
-    if livros.get(nome) == None:
-        p("livro inexistente!")
+    if livros.get(nome) is None:
+        print("livro inexistente!")
+        return
     livros[nome] = "disponivel"
-    p("Livro devolvido com sucesso!")
+    print("Livro devolvido com sucesso!")
 
 
 def adicionar_livro(nome):
@@ -29,12 +29,12 @@ def adicionar_livro(nome):
 
 def listar_livros():
     for livro, disponibilidade in livros.items():
-        p(f"{livro} --> {disponibilidade}")
+        print(f"{livro} --> {disponibilidade}")
 
 
-p("--------------------------------")
+print("-" * 40)
 
-p(
+print(
     """Selecione uma opção:
 1. Listar livros.
 2. Pegar livro.
@@ -43,7 +43,7 @@ p(
 )
 
 while True:
-    p("--------------------------------")
+    print("-" * 40)
 
     ans = input("Insira sua resposta: ")
 
@@ -59,6 +59,6 @@ while True:
         case "4":
             livro = input("Insira o nome do livro: ")
             adicionar_livro(livro)
-            p("Livro inserido com sucesso!")
+            print("Livro inserido com sucesso!")
         case _:
             print("Insira um número valido!")
