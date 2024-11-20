@@ -34,6 +34,7 @@ def listar_livros():
 
 print("-" * 40)
 
+
 print(
     """Selecione uma opção:
 1. Listar livros.
